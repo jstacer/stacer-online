@@ -4,4 +4,8 @@ class ApplicationController < ActionController::Base
   def hello
     render html: "This site is under construction."
   end
+
+  def letsencrypt
+  	render text: "#{params[:id]}.-second-part-of-string-random-characters"
+  end
 end
