@@ -6,6 +6,6 @@ class ApplicationController < ActionController::Base
   end
 
   def letsencrypt
-  	render text: "#{params[:id]}.-second-part-of-string-random-characters"
+  	render text: "#{params[:id]}.2bCGjv0RsO_BjxveJofHn7TRztmtPbj79C4L1iKSG8g"
   end
 end
