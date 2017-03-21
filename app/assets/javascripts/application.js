@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require lightbox-bootstrap
 //= require_tree .
+
+// Vendor Files
+//= require modernizr-2.6.2.min

@@ -1,0 +1,76 @@
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  header {
+    position: relative;
+  }
+  .menu .navbar-default .navbar-nav > li > a {
+    padding: 5px 7px;
+  }
+  #banner .block .download-btn li {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #banner .block .download-btn li a {
+    display: block;
+  }
+  #banner {
+    padding: 40px 0;
+  }
+  #banner h1 {
+    font-size: 40px;
+  }
+  #banner .block img {
+    padding-top: 80px;
+  }
+  #banner .block > p {
+    margin-bottom: 20px;
+  }
+  footer .footer-logo {
+    display: inline-block;
+  }
+}
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+@media only screen and (max-width: 767px) {
+  header {
+    position: relative;
+  }
+  #banner .block .download-btn li {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #banner .block .download-btn li a {
+    display: block;
+  }
+  #banner {
+    padding: 40px 0;
+  }
+  #banner h1 {
+    font-size: 40px;
+  }
+  footer .footer-logo {
+    display: inline-block;
+  }
+}
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */

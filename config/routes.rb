@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  root 'application#hello'
+  get 'static_pages/home'
+  get '/resume', to: 'static_pages#resume'
+  get '/projects', to: 'static_pages#projects'
 
-  # Let’s encrypt
-  # get '/.well-known/acme-challenge/:id' => 'application#letsencrypt'
+  # LetsEncrypt route for new SSL certificates by Certbot
+  get '/.well-known/acme-challenge/:id' => 'application#letsencrypt'
+
+  root 'static_pages#home'
 end
