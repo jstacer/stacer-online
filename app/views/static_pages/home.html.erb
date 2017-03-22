@@ -2,7 +2,7 @@
   <div class="row center">
     <div class="col-md-4 col-md-offset-1 col-sm-6 col-xs-8">
       <div class="block">
-      	<%= image_tag("me.png", class: 'app-img img-responsive') %>
+      	<%= image_tag("me.png", class: 'img-responsive', id: 'mug') %>
       </div>
     </div>
 
@@ -11,7 +11,7 @@
         <h1>
         	Hello. My name is Jud and I code for the web.
         </h1>
-        <p>        	
+        <p>
         	Originally a	
         	<a href="http://grady.uga.edu/" target="_blank">
         		 journalism
@@ -19,7 +19,7 @@
         	major and newspaper copy editor, I am now
         	among a growing number of programmers with a 
         	<a href="http://blogs.wsj.com/experts/2016/06/01/why-i-was-wrong-about-liberal-arts-majors/" 
-        		 target="_blank">
+        	   target="_blank">
         		 liberal arts
         	</a>
         	degree. I write, I code, I have an eye 
@@ -45,11 +45,10 @@
     </div>
 
     <!-- The Modal stays hidden until JQuery triggered by #link-->
-		<div id="myModal" class="modal animated">
-		  <!-- Modal Content (The Image) -->
-		  <%= image_tag("pumpkin", class: "modal-content") %>
-		</div>
-
+    <div id="myModal" class="modal animated">
+      <!-- Modal Content (The Image) -->
+      <%= image_tag("pumpkin", class: "modal-content") %>
+    </div>
   </div>
 </section>
 

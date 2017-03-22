@@ -1,7 +1,49 @@
-<section class="content wow fadeInUp">
+<% provide(:title, "Projects") %>
+<section class="content projects wow fadeInUp">
+  <div class="row center block col-md-12 col-xs-12">
+    <h1>
+      Rails 5 Tutorial: Twitter Replica
+    </h1>
+  </div>
   <div class="row center">
-
-    <h1>Projects will go here, son</h1>
-
+    <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+      <div class="block">
+        <%= link_to "https://evening-dusk-12809.herokuapp.com/", target: "_blank" do %>
+          <%= image_tag "sampleapp.png", class: "img-responsive" %>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-5 col-sm-6 col-xs-12">
+      <div class="block">
+        <p>         
+          This 14-chapter
+          <a href="https://www.railstutorial.org/" target="_blank">
+             tutorial
+          </a>
+          steps through building and deploying a Twitter-style application. 
+          Among many key concepts, it covers MVC, testing, 
+          model validation, mailers, model relationships,
+          and building a user authentication / authorization /
+          activation system from scratch. Upon completion, the
+          app allows for user signup, posting "microposts" (images
+          as well), and following other users to create a personal feed.
+          <br /><br />
+          <a href="https://evening-dusk-12809.herokuapp.com/" target="_blank">
+             App in production
+          </a>&nbsp&nbsp|&nbsp&nbsp
+          <a href="https://github.com/jstacer/hartl-sample-app" target="_blank">
+             Github repository
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row center">
+    <br />
+    <br />
+    <br />
+    <div id="moretocome">
+      <strong>More projects coming soon</strong>
+    </div>
   </div>
 </section>
