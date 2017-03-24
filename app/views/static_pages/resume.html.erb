@@ -1,8 +1,105 @@
 <% provide(:title, "Resume") %>
 <section class="content wow fadeInUp">
   <div class="row center">
-
-    <h1>Resume will go here, son</h1>
-
+    <div class="center col-md-8 col-xs-12">
+      <div id="tabs">
+        <ul>
+          <li><a href="#skills" onclick="fadeIn('#skills')"><span>Skills</span></a></li>
+          <li><a href="#education" onclick="fadeIn('#education')"><span>Education</span></a></li>
+          <li><a href="#experience" onclick="fadeIn('#experience')"><span>Experience</span></a></li>
+          <li><a href="#challenge" onclick="fadeIn('#challenge')"><span>Challenge</span></a></li>
+        </ul>
+        <div id="skills" class="resume">
+          <ul>
+              <li><strong>10+ yrs: </strong>Editing, Design/Layout, Photoshop</li><br />
+              <li><strong>1-5 yrs: </strong>Ruby, Rails 5, HTML5, CSS3, Sass/Less, JavaScript, JQuery, Java, SQL</li><br />
+              <li><strong>&lt1 yr: </strong>Angular, React, PHP, C++, Python</li><br />
+              <li>
+                Every Codecademy course 
+                <a href="https://www.codecademy.com/jud1183" target="_blank">
+                  completed 100 percent.
+                </a>
+              </li>
+          </ul>
+        </div>
+        <div id="education" class="resume">
+          <span><strong>University of Georgia</strong><br />
+          Bachelor of Arts, Journalism<br />
+          (May 2011)</span>
+          <br /><br />
+          <span><strong>Gwinnett Technical College</strong><br />
+          Computer Programming Diploma<br />
+          (Dec. 2014)</span>
+        </div>
+        <div id="experience" class="resume">
+          <ul>
+            <li>
+              <h1>Freelance Editor / Driver, self</h1>
+              <strong>June 2015-Present</strong><br />
+              Driving for Lyft and Uber; some freelance copy editing; continuing 
+              to develop tech skills with focus on web development using Ruby on Rails. 
+              Finished every course on Codecademy.
+            </li>
+            <li>
+              <h1>Jr. ORPOS Consultant, Lillii RNB, Inc.</h1>
+              <strong>Atlanta-based startup, August 2014-May 2015</strong><br />
+              Completed 8-week Oracle Retail Point-of-Service (Java-based enterprise software) 
+              training; worked on: Android application design for an NFC reader app, J-Unit testing, 
+              debugging during the final phase of an update of Chicago’s METRA system, wearable 
+              application design for an in-house product, working on Urban Outfitters’ POS.
+            </li>
+            <li>
+              <h1>Jr. Developer Intern, Lillii RNB, Inc.</h1>
+              <strong>Feb. 2014-July 2014</strong><br />
+              Worked on internal project to design an online screening application. Used Waterfall 
+              development process, Balsamiq for wireframing views of the web app.
+            </li>
+            <li>
+              <h1>Assistant Online News Editor, <br>The Athens Banner-Herald</h1>
+              <strong>Small newspaper in Athens, Ga., June 2010-Sept. 2011</strong><br />
+              Migrated web content for onlineathens.com from the print edition, wrote web headlines, 
+              light HTML; edited and designed pages for print.
+            </li>
+            <li>
+              <h1>Copy Editor, The Augusta Chronicle</h1>
+              <strong>Mid-sized newspaper in Augusta, Ga., July 2006-June 2010</strong><br />
+              Designed pages for news, sports, and features; edited staff and wire content for Associated 
+              Press style, spelling, accuracy, length; wrote headlines, photo captions; met daily deadlines; 
+              maintained Drupal-based website <a href="http://chronicle.augusta.com/" target="_blank">
+              chronicle.augusta.com.</a>
+            </li>
+            <li>
+              <h1>Features Copy Editor, <br>The Athens Banner-Herald</h1>
+              <strong>Dec. 2005-April 2006</strong><br />
+              Designed pages for features sections; browsed the wire and selected/edited content; 
+              wrote headlines; edited all local features copy.
+            </li>
+          </ul>
+        </div> 
+        <div id="challenge" class="resume">
+          <h1>Challenge me</h1>
+          If I applied for a job with your company, I invite you to send me a coding challenge. 
+          This will give me a chance to prove how fast I can learn or solve a problem. Send your 
+          challenge to me at <a href="mailto:jud.stacer@gmail.com">jud.stacer@gmail.com.</a>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+
+<script>
+  $( "#tabs" ).tabs();
+
+  $.fn.extend({
+    animateCss: function (animationName) {
+      var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+      this.addClass('animated ' + animationName).one(animationEnd, function() {
+        $(this).removeClass('animated ' + animationName);
+      });
+    }
+  });
+
+  function fadeIn(id) {
+    $(`${id}`).animateCss('fadeIn');
+  }
+</script>

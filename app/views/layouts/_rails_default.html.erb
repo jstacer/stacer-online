@@ -1,2 +1,38 @@
 <%= csrf_meta_tags %>
 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+<style>
+  .ui-tabs {
+    background-color: #dfece0;
+  }
+  .ui-widget-header {
+    border: none;
+    background: none;
+  }
+  .ui-tabs-active a {
+    background-color: #059246;
+  }
+  .ui-tabs-nav {
+    float: none; 
+    text-align: center;  
+  }
+  .ui-tabs .ui-tabs-nav li {
+    width: 23%;
+    text-align: center;
+    float: none;
+    display: inline-block;
+  }
+  .ui-tabs .ui-tabs-nav li a {
+    display: inline-block;
+    float: none;
+    padding: 5px;
+    text-decoration: none;
+    width: 100%;
+  }
+  #tabs {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    border: none;
+    margin-bottom: -50px;
+  }
+</style>
