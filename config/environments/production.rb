@@ -85,5 +85,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # ActionCable
-  config.action_cable.allowed_request_origins = ['https://stacer.online']
+  config.action_cable.allowed_request_origins = ['https://stacer.online', 'https://guarded-taiga-91705.herokuapp.com/']
 end
