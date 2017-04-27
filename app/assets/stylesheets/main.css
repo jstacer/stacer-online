@@ -135,6 +135,7 @@ header {
 }
 .content .block .download-btn li .btn-resume {
   margin-right: 5px;
+  margin-bottom: 7px;
   background: #fff;
   border: 1px solid #059246;
   -webkit-transition: .2s all;
@@ -147,6 +148,8 @@ header {
   border: 1px solid #059246;
 }
 .content .block .download-btn li .btn-projects {
+  margin-right: 5px;
+  margin-bottom: 7px;
   background: #fff;
   border: 1px solid #059246;
   -webkit-transition: .2s all;
@@ -157,6 +160,14 @@ header {
   color: #fff;
   background: #059246;
   border: 1px solid #059246;
+}
+#bernie-text {
+  display: none;
+  color: #0073e6;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -100px;
 }
 
 

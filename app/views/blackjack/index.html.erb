@@ -1,0 +1,50 @@
+<% provide(:title, "Projects") %>
+<section class="content wow fadeInUp">
+  <div class="row block center">
+    <div class="col-md-6">
+      <h1>Linux SSH: Blackjack</h1>
+      <p>A Blackjack game I wrote in C++ runs on an ec2 instance with Amazon
+        Web Services running Red Hat 7.3.
+      </p>
+    </div>
+
+    <div class="col-md-6">
+      <div id="term_demo" class="terminal">
+        <div class="terminal-wrapper">
+          <iframe></iframe>
+          <div class="terminal-output">
+            <div>
+              <div style="width: 100%;">
+                <span>Javascript&nbsp;Interpreter</span>
+              </div>
+            </div>
+          </div>
+          <div class="cmd" style="width: 100%;">
+            <span class="prompt">
+              <span>js&gt;&nbsp;</span>
+            </span>
+            <span></span>
+            <span class="cursor">&nbsp;</span>
+            <span></span>
+            <textarea autocapitalize="off" spellcheck="false" class="clipboard"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  $(function() {
+    $('#term_demo').terminal(function(input, term) {
+        term.pause();
+        $.post('/blackjack', {input: input});
+    }, {
+        greetings: "Type 'start' to play Blackjack",
+        name: 'Interpreter',
+        height: 550,
+        prompt: '> '
+    });
+  });
+</script>
