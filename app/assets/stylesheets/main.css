@@ -187,6 +187,9 @@ header {
 .projects h1 {
   text-align: center;
 }
+#linuxssh p {
+  font-size: 17px;
+}
 
 
 /* Resume */

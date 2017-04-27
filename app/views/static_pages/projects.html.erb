@@ -1,10 +1,52 @@
 <% provide(:title, "Projects") %>
 <section class="content projects wow fadeInUp">
+  <!-- Project Item Headline -->
+  <div class="row center block col-md-12 col-xs-12">
+    <h1>
+      Rails-to-Linux SSH: Blackjack
+    </h1>
+  </div>
+  <!-- Begin Project Item -->
+  <div class="row center">
+    <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
+      <div class="block">
+        <%= link_to blackjack_path do %>
+          <%= image_tag "blackjack.png", class: "img-responsive" %>
+        <% end %>
+      </div>
+    </div>
+    <div class="col-md-5 col-sm-6 col-xs-12">
+      <div class="block">
+        <p>         
+          All I wanted to do was show some C++ code, but
+          my quest for a solution quickly turned into a 
+          <a href="https://www.youtube.com/watch?v=1GN_juATOQc" target="_blank">
+            Rube Goldberg 
+          </a>
+          contraption involving Linux EC2, Net-SSH, Sidekiq, Redis,
+          JQueryTerminal, and last but not least, ActionCable.
+          It doesn't make breakfast at all! But at least no
+          one got hurt.
+          <br /><br />
+          <%= link_to "Play Blackjack", blackjack_path %>
+          &nbsp&nbsp|&nbsp&nbsp
+          <a href="https://github.com/jstacer/stacer-online" target="_blank">
+             Source on Github
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- End Project Item -->
+  <br />
+  <br />
+  <!-- Project Item Headline -->
   <div class="row center block col-md-12 col-xs-12">
     <h1>
       Rails 5 Tutorial: Twitter Replica
     </h1>
   </div>
+  <!-- Begin Project Item -->
   <div class="row center">
     <div class="col-md-5 col-md-offset-1 col-sm-6 col-xs-12">
       <div class="block">
@@ -38,6 +80,8 @@
       </div>
     </div>
   </div>
+  <!-- End Project Item -->
+
   <div class="row center">
     <br />
     <br />

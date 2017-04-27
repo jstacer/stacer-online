@@ -1,10 +1,44 @@
 <% provide(:title, "Projects") %>
 <section class="content wow fadeInUp">
   <div class="row block center">
-    <div class="col-md-6">
+    <div class="col-md-6" id="linuxssh">
       <h1>Linux SSH: Blackjack</h1>
-      <p>A Blackjack game I wrote in C++ runs on an ec2 instance with Amazon
-        Web Services running Red Hat 7.3.
+      <p>This began with me wanting simply to demo some C++ code
+         I had written in school, but figuring out how to do that
+         in Rails took me down several digital 
+         <a href="https://media.giphy.com/media/swtiK9jRfE0zS/giphy.gif" target="_blank">
+           rabbit holes.
+         </a>
+         I considered embedding the C++ in Ruby using a wrapper like
+         <a href="https://www.amberbit.com/blog/2014/6/12/calling-c-cpp-from-ruby/" target="_blank">
+           RubyInline or Rice, 
+         </a>
+         but ultimately decided to deploy my code on an Amazon Web 
+         Services EC2 instance running Red Hat. In order to get my app 
+         to talk to Linux, I wrote a Ruby class BlackjackWorker that 
+         implements two Ruby libraries: Net-SSH and Sidekiq. 
+         <a href="https://github.com/net-ssh/net-ssh" target="_blank">
+           Net-SSH 
+         </a>
+         provides API for creating SSH connection to Linux, as you would 
+         use on a desktop terminal. 
+         <a href="https://github.com/mperham/sidekiq" target="_blank">
+           Sidekiq
+         </a> 
+         implements multi-threading to run BlackJackWorker on a Redis 
+         instance, allowing these processes to run concurrently in the background. 
+         <br /><br />
+         For the terminal, I found a cool library, 
+         <a href="http://terminal.jcubic.pl/" target="_blank">
+           JQueryTerminal, 
+         </a> 
+         for emulating a terminal right in the browser! Finally, I used Rails 
+         ActionCable to create a channel for broadcasting to JQueryTerm. 
+         I only half-implemented it however, as terminal input is currently 
+         being sent to BlackjackWorker via post request, which isn't really
+         secure. I did not foresee how much work would be
+         required to make this happen, but I definitely learned a 
+         lot in the process.
       </p>
     </div>
 
@@ -41,7 +75,7 @@
         term.pause();
         $.post('/blackjack', {input: input});
     }, {
-        greetings: "Type 'start' to play Blackjack",
+        greetings: "Type 'start' to play Blackjack, hit enter to advance at paused screen",
         name: 'Interpreter',
         height: 550,
         prompt: '> '
