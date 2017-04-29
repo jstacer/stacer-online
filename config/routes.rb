@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'static_pages/home'
   get '/resume', to: 'static_pages#resume'
   get '/projects', to: 'static_pages#projects'
-  get '/projects/blackjack', to: 'blackjack#index'
+  get '/projects/blackjack', to: 'blackjack#index', as: 'blackjack'
   # Blackjack AJAX
   get '/blackjack', to: redirect('/projects/blackjack')
   post '/blackjack',  to: 'blackjack#post'
