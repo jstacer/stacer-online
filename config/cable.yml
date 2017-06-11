@@ -1,10 +1,9 @@
-# development:
-#   adapter: redis
-#   url: redis://localhost:6379/1
+development:
+  adapter: async
 
-# test:
-#   adapter: async
+test:
+  adapter: async
 
-# production:
-#   adapter: redis
-#   url: redis://redistogo:bca5dd8a611467ccec83c49b9f8d81e1@barreleye.redistogo.com:11637/
+production:
+  adapter: redis
+  url: redis://localhost:6379/1
