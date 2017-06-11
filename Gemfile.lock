@@ -1,3 +1,15 @@
+GIT
+  remote: https://github.com/sinatra/sinatra.git
+  revision: a58834812b455101111ef332c7510bc9083c30d0
+  specs:
+    rack-protection (2.0.0)
+      rack
+    sinatra (2.0.0)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.0)
+      tilt (~> 2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -122,6 +134,7 @@ GEM
       minitest (>= 5.0)
       ruby-progressbar
     multi_json (1.12.1)
+    mustermann (1.0.0)
     nenv (0.3.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -239,9 +252,11 @@ DEPENDENCIES
   minitest-reporters (= 1.1.9)
   pg (= 0.18.4)
   puma (~> 3.4)
+  rack-protection
   rails (~> 5.0.2)
   rails-controller-testing (= 0.1.1)
   sass-rails (~> 5.0)
+  sinatra!
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

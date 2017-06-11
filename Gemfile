@@ -40,8 +40,8 @@ gem 'jbuilder', '~> 2.5'
 # runs background processes
 # gem 'sidekiq'
 # DSL required by sidekiq
-# gem 'sinatra', github: 'sinatra'
-# gem 'rack-protection'
+gem 'sinatra', github: 'sinatra'
+gem 'rack-protection'
 # config var protection
 gem 'figaro'
 
