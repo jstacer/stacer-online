@@ -22,20 +22,22 @@ class BlackjackWorker
 
   # initiates all threads from Blackjack controller
   def perform(args = nil)
-    if args.downcase == "start" && !@@running
-      playGame
-      @@running = false
-      @@input = nil
-      clearConsole
-      sleep(0.2)
-      broadcast("Goodbye! Type 'start' to restart Blackjack.")
-    elsif args.downcase == "start" && @@running
-      clearConsole
-      sleep(0.2)
-      broadcast("Process still running, try again in a minute.")
-    else
-      setInput(args)
-    end    
+    puts args
+
+    # if args.downcase == "start" && !@@running
+    #   playGame
+    #   @@running = false
+    #   @@input = nil
+    #   clearConsole
+    #   sleep(0.2)
+    #   broadcast("Goodbye! Type 'start' to restart Blackjack.")
+    # elsif args.downcase == "start" && @@running
+    #   clearConsole
+    #   sleep(0.2)
+    #   broadcast("Process still running, try again in a minute.")
+    # else
+    #   setInput(args)
+    # end    
   end
 
 

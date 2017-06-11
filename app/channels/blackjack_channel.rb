@@ -1,6 +1,6 @@
 class BlackjackChannel < ApplicationCable::Channel
   def subscribed
-    stream_from "blackjack_channel"
+    #stream_from "blackjack_channel"
   end
 
   def unsubscribed

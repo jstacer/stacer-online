@@ -8,10 +8,10 @@ class BlackjackController < ApplicationController
   end
 
   def post
-    text = params[:input]
-    response = {:text => text}
-    BlackjackWorker.perform_async(text)
-    render json: response
+    # text = params[:input]
+    # BlackjackWorker.perform_async(text)
+    # response = {:text => text}
+    # render json: response
   end
 
 end

@@ -18,20 +18,20 @@
     <div class="col-md-5 col-sm-6 col-xs-12">
       <div class="block">
         <p>         
-          All I wanted to do was show some C++ code, but
-          my quest for a solution quickly turned into a 
-          <a href="https://www.youtube.com/watch?v=1GN_juATOQc" target="_blank">
-            Rube Goldberg 
-          </a>
-          contraption involving Linux EC2, Net-SSH, Sidekiq, Redis,
-          JQueryTerminal, and last but not least, ActionCable.
-          It doesn't make breakfast at all! But at least no
-          one got hurt.
+          In order to save dyno consumption (and hosting fees),
+          I have disabled this formerly deployed Redis setup.
+          The code is available on Github. Previously, I deployed 
+          some C++ code on a Linux instance and wrote a Ruby class
+          to talk to it using Sidekiq and Net-SSH. JQueryTerminal and
+          ActionCable were used to send/receive strings to and from
+          the browser. 
           <br /><br />
-          <%= link_to "Play Blackjack", blackjack_path %>
+          <a href="https://github.com/jstacer/blackjack/blob/master/Blackjack.cpp" target="_blank">
+             Blackjack C++
+          </a>
           &nbsp&nbsp|&nbsp&nbsp
           <a href="https://github.com/jstacer/stacer-online/blob/master/app/workers/blackjack_worker.rb" target="_blank">
-             Source on Github
+             Blackjack Worker Ruby class
           </a>
         </p>
       </div>

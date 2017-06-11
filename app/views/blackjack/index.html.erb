@@ -75,9 +75,12 @@
   $(function() {
     $('#term_demo').terminal(function(input, term) {
         term.pause();
-        $.post('/blackjack', {input: input});
+        term.clear();
+        term.echo("Blackjack has been disabled to save dyno consumption. Please see my code on Github.");
+        term.resume();
+        // $.post('/blackjack', {input: input});
     }, {
-        greetings: "Type 'start' to play Blackjack, hit enter to advance at paused screen",
+        greetings: "Sorry, I've disabled this game. Check out the code on my Github :)",
         name: 'Interpreter',
         height: 550,
         prompt: '> '
