@@ -1,4 +1,4 @@
-require 'net/ssh'
+# require 'net/ssh'
 
 # Accesses my C++ Blackjack game deployed on ec2 Linux
 # instance by SSH connection. Input from jcubic 
@@ -7,17 +7,21 @@ require 'net/ssh'
 # broadcast. Sidekiq::Worker allows class 
 # to run on its own thread on Redis instance.
 
+# THIS CLASS IS CURRENTLY DISABLED,
+# NET-SSH and SIDEKIQ ARE DISABLED
+# For viewing on GitHub only
+
 class BlackjackWorker
-  include Sidekiq::Worker
-  sidekiq_options retry: false
+  # include Sidekiq::Worker
+  # sidekiq_options retry: false
 
 
   #class variables
-  @@input = nil
-  @@host = ENV["EC2_HOST"]
-  @@user = ENV["EC2_USER"]
-  @@password = ENV["EC2_PASSWORD"]
-  @@running = false
+  # @@input = nil
+  # @@host = ENV["EC2_HOST"]
+  # @@user = ENV["EC2_USER"]
+  # @@password = ENV["EC2_PASSWORD"]
+  # @@running = false
 
 
   # initiates all threads from Blackjack controller
