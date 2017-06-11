@@ -44,6 +44,8 @@ gem 'sinatra', github: 'sinatra'
 gem 'rack-protection'
 # config var protection
 gem 'figaro'
+# assets precompilation
+gem 'webpacker', '~> 0.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
