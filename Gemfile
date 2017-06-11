@@ -30,23 +30,23 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # SSH methods
-gem 'net-ssh'
+# gem 'net-ssh'
 # another SSH kit, like net-ssh
-gem 'sshkit', '~> 1.7', '>= 1.7.1'
+# gem 'sshkit', '~> 1.7', '>= 1.7.1'
 # SCP client protocol
-gem 'net-scp', '~> 1.2', '>= 1.2.1'
+# gem 'net-scp', '~> 1.2', '>= 1.2.1'
 # IO classes for ssh
-gem 'ruby-termios', '~> 1.0', '>= 1.0.2'
+# gem 'ruby-termios', '~> 1.0', '>= 1.0.2'
 # runs background processes
-gem 'sidekiq'
+# gem 'sidekiq'
 # DSL required by sidekiq
-gem 'sinatra', github: 'sinatra'
-gem 'rack-protection'
+# gem 'sinatra', github: 'sinatra'
+# gem 'rack-protection'
 # config var protection
 gem 'figaro'
 
 # Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 3.0'
+# gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
