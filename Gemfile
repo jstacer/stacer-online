@@ -72,7 +72,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'capistrano', '~> 3.4'
-  # gem 'capistrano-ssh-doctor', '~> 1.0'
+  gem 'capistrano-ssh-doctor', '~> 1.0'
 end
 
 group :test do
