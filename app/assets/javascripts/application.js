@@ -13,12 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery-ui.min
 //= require wow.min
 
 //= require_tree ./channels
 
 // Vendor Files
 //= require modernizr-2.6.2.min
-//= require jquery-ui.min
 //= require jquery.terminal-1.0.15
 //= require jquery.mousewheel-min
