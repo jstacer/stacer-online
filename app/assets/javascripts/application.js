@@ -13,9 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require lightbox-bootstrap
-//= require bootstrap.min
-//= require_tree .
+//= require wow.min
+
 //= require_tree ./channels
 
 // Vendor Files

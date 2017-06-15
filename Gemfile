@@ -14,11 +14,11 @@ gem 'puma', '~> 3.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0.6'
 # Bootstrap CSS classes
-gem 'bootstrap-sass', '~> 3.3.6'
+# gem 'bootstrap-sass', '~> 3.3.6'
 # Social media button styles
-gem 'bootstrap-social-rails', '~> 4.8'
+# gem 'bootstrap-social-rails', '~> 4.8'
 # create lightbox modals
-gem 'lightbox-bootstrap-rails', '5.1.0.1'
+# gem 'lightbox-bootstrap-rails', '5.1.0.1'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '~> 3.0.0'
 # Use CoffeeScript for .coffee assets and views
