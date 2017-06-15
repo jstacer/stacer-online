@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require lightbox-bootstrap
+//= require bootstrap.min
 //= require_tree .
 //= require_tree ./channels
 
